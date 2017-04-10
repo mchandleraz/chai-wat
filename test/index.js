@@ -8,4 +8,7 @@ describe('getRandomArrayItem', () => {
   it('returns something', () => {
     expect(getRandomArrayItem()).to.be.defined;
   });
+  it('does not return undefined', () => {
+    expect(getRandomArrayItem()).not.to.be.undefined;
+  });
 });
